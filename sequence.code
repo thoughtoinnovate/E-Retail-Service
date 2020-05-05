@@ -1,0 +1,10 @@
+title E-Retail Service
+
+Customer->E-Retail-Service:Customer requests purchase
+E-Retail-Service->Discount-Service-Module: request to calculate discount for purchase amount
+Discount-Service-Module->Slab-Service:To retrieve slabs configured in external systems
+Slab-Service->External-Slab-Service:Slab for membership-type Configurations DB/Service
+External-Slab-Service->Slab-Service:configured slabs
+Slab-Service->Discount-Service-Module:configured slabs
+Discount-Service-Module->E-Retail-Service:discounted price
+E-Retail-Service->Customer:Discounted price
