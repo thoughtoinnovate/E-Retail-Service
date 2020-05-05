@@ -1,7 +1,7 @@
 # E-Retail
 
 ## Sequence Design Diagram
-![Sequence Design Diagram](E-Retail Service.png)
+![Sequence Design Diagram](E-RetailService.png)
 
 ### Discount Service Module
 * Contains logic for discount calculation on the purchased amount for the customer
